@@ -11,6 +11,12 @@ cask "wave" do
 
   app "wave.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/wave.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.wave.terminal.plist",
     "~/Library/Caches/com.wave.terminal",
