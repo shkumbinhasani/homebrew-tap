@@ -1,6 +1,6 @@
 cask "wave" do
-  version "0.3.1"
-  sha256 "a4ca7cdd21370c0c1916e490de98258c12b9f749bde71b1690f112f3aea41bda"
+  version "0.4.2"
+  sha256 "41e8f75558d14c4c2d5ef73206e6397c03c4a92ed8d794c84db929cc8b9b7245"
 
   url "https://github.com/shkumbinhasani/wave/releases/download/v#{version}/wave-macos-arm64.zip"
   name "Wave Terminal"
