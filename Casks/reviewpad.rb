@@ -1,6 +1,6 @@
 cask "reviewpad" do
-  version "0.7.0"
-  sha256 "82a3f5846527a2a40d745c8a895a976ee9e23cad2ac133e36bd526fcd5d40c47"
+  version "0.7.1"
+  sha256 "ebb33e309c5f639dbe1bbbcb677e7eaf14123f67ccb88ae4bb20dd4edcbbab48"
 
   url "https://github.com/shkumbinhasani/reviewpad/releases/download/v#{version}/ReviewPad-macos-universal.zip"
   name "ReviewPad"
