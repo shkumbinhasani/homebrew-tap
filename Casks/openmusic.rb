@@ -1,9 +1,9 @@
 cask "openmusic" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.0"
-  sha256 arm:   "eb37c8c65f38ea10e7e7e8292c781505649b81bbdf0e530d140e98d335118a9d",
-         intel: "306af2db5afe278fe80d06ee7cb5f570a52927eee547674a5a8625ee6a83baaf"
+  version "0.2.0"
+  sha256 arm:   "9f2ff2cb6e10107f292bee907ac72422c7942d44e4b21b7f0419181753e90c85",
+         intel: "3c32776a1892d3d5909e7f49e84d806c5acb2e9b62e0c93917008fb04faee98e"
 
   url "https://github.com/shkumbinhasani/openmusic/releases/download/v#{version}/OpenMusic-#{version}-#{arch}.zip"
   name "OpenMusic"
@@ -27,6 +27,7 @@ cask "openmusic" do
         must_succeed: false,
       },
       trash:  [
+        "~/Library/Application Support/OpenMusic",
         "~/Library/Caches/OpenMusic",
         "~/Library/HTTPStorages/io.openmusic.player",
         "~/Library/Preferences/io.openmusic.player.plist",
